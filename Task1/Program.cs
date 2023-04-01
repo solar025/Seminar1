@@ -16,11 +16,11 @@ value2 = Console.ReadLine();
 int numberB = Convert.ToInt32(value2);
 if (numberA < numberB)
 {
-    System.Console.WriteLine(numberB);
+    System.Console.WriteLine($"{numberB} - большее, {numberA} - меньшее");
 }
 else
 {
-    System.Console.WriteLine(numberA);
+    System.Console.WriteLine($"{numberA} - большее, {numberB} - меньшее");
 }
 if (numberA == numberB)
 {

@@ -7,10 +7,9 @@ Console.Write("Укажите число ");
 string value;
 value = Console.ReadLine();
 int number = Convert.ToInt32(value);
-int i = 1;
+int i = 2;
 while (i <= number)
 {
-    if (i % 2 == 0)
     Console.WriteLine(i);
-    i++;
+    i+=2;
 }

@@ -18,15 +18,14 @@ Console.Write("Укажите число ");
 string value3;
 value3 = Console.ReadLine();
 int numberC = Convert.ToInt32(value3);
-if (numberB <= numberA && numberA >= numberC)
+
+int max = numberA;
+if (max < numberB)
 {
-    System.Console.WriteLine(numberA);
+    max = numberB;
 }
-else if (numberA <= numberB && numberB >= numberC)
+if (max < numberC)
 {
-    System.Console.WriteLine(numberB);
+    max = numberC;
 }
-if (numberA <= numberC && numberC >= numberB)
-{
-    System.Console.WriteLine(numberC);
-}
+System.Console.WriteLine(max);
